@@ -55,7 +55,6 @@ a{
 /***Utilidades***/
 .contenedor{
     width: 90%;
-    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -70,8 +69,8 @@ a{
 }
 
 .separador{
-    margin-top: 5vw;
-    margin-bottom: 5vw;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
 }
 
 .activador{
@@ -409,7 +408,7 @@ a{
 
 .footer__barra{
     display: flex;
-    width: 95rem;
+    width: 75%;
 }
 
 .footer__navegacion{
