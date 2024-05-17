@@ -4,7 +4,7 @@
     --primario: #490AD0;
     --secundario: #F1F2F1;
     --blanco: #FFF;
-    --negro: #000;
+    --negro: #1b1b1b;
     
     /*Fuentes*/
     --principal: "Roboto", sans-serif;
@@ -52,6 +52,11 @@ a{
     text-decoration: none;
 }
 
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
 /***Utilidades***/
 .contenedor{
     width: 90%;
@@ -64,13 +69,20 @@ a{
     display: inline-block;
 }
 
+.boton__secundario{
+    background-color: var(--negro);
+    font-weight: 500;
+    margin: 3rem 0;
+    padding: 1vw 5vw;
+}
+
 .animacion{
     transition: all 0.5s, padding 0.1s;
 }
 
 .separador{
-    margin-top: 4vw;
-    margin-bottom: 4vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
 }
 
 .activador{
@@ -189,6 +201,7 @@ a{
 .principal__parrafo{
     text-align: center;
     width: 65%;
+    margin-top: 4vw;
 }
 
 /*Carrusel*/
@@ -311,14 +324,6 @@ a{
 .cotizar__texto{
     margin: 0 5vw;
     line-height: 2;
-}
-
-.cotizar__boton{
-    background-color: var(--negro);
-    font-weight: 500;
-    margin: 4rem 0;
-    padding-left: 2vw;
-    padding-right: 2vw;
 }
 
 /***Preguntas***/
@@ -476,4 +481,146 @@ a{
     background: var(--fondo);
     background: var(--gradiente);
     font-weight: bold;
+}
+
+/***PÁGINA SERVICIOS***/
+
+/*Encabezado*/
+.descripcion__servicio{
+    background-image: url(../img/banner-100.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.descripcion__contenido--secundario{
+    height: 50vh;
+    color: var(--blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Sección equipo*/
+.nosotros{
+    text-align: end;
+    width: 80%;
+    color: var(--negro);
+}
+
+.nosotros__titulo{
+    text-transform: uppercase;
+    margin: 1vw 0;
+}
+
+.nosotros__presentacion{
+    display: flex;
+}
+
+.nosotros__bloque{
+    flex: 0 0 50%;
+    background-color: var(--negro);
+}
+
+.nosotros__marco{
+    position: relative;
+    margin-top: -2.055vw;
+    max-width: 117.5%;
+}
+
+.nosotros__bloque--descripcion{
+    padding: 3vw;
+    text-align: center;
+    background-color: var(--secundario);
+    font-family: var(--auxiliar);
+}
+
+.nosotros__texto{
+    margin: 3.25vw 0px;
+    font-weight: 500;
+    font-size: 1.3vw;
+    line-height: 1.7;
+}
+
+.nosotros .boton__secundario{
+    margin: 0;
+}
+
+/*Servicios*/
+.servicio{
+    background-color: var(--secundario);
+}
+
+.servicio__contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw 0 0 0;
+    position: relative !important;
+}
+
+.servicio__card{
+    flex: 0 0 33%;
+    text-align: center;
+    color: var(--negro);
+}
+
+.servicio__imagen{
+    max-width: 40%;
+    max-height: 40%;
+}
+
+.servicio__titulo{
+    font-size: 2vw;
+    margin-top: 5vw;
+    margin-bottom: 0;
+}
+
+.servicio__texto{
+    font-family: var(--auxiliar);
+    font-weight: 500;
+}
+
+.servicio .boton__secundario{
+    background: var(--fondo);
+    background: var(--gradiente);
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.servicio .principal__flecha{
+    position: relative;
+    bottom: 25vw;
+    right: 0;
+    left: 0;
+}
+
+.servicio .principal__flecha--derecha{
+    margin-left: 2vw;
+    fill: var(--negro);
+} 
+
+.servicio .principal__flecha--izquierda{
+    margin-right: 2vw;
+    fill: var(--negro);
+} 
+
+/*Equipo*/
+.equipo{
+    text-align: center;
+}
+
+.equipo__parrafo{
+    color: var(--negro);
+    font-family: var(--auxiliar);
+}
+
+.equipo__texto{
+    font-size: 1.5vw;
+    padding: 0 15%;
+}
+
+.equipo__imagen{
+    max-width: 80%;
 }
