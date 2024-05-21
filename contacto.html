@@ -17,102 +17,93 @@
 </head>
 <body>
 
-    <header class="encabezado__secundario">
+    <header>
         <div class="barra">
             <div class="barra__contenido contenedor">
                 <p class="barra__logo"><span class="barra__logo--titulo">3S</span>tudio</p>
                 
                 <nav class="barra__navegacion">
                     <a href="index.html" class="barra__enlace animacion">Inicio</a>
-                    <a href="servicios.html" class="barra__enlace barra__enlace--seleccion animacion">Servicio</a>
-                    <a href="contacto.html" class="barra__enlace animacion">Contacto</a>
+                    <a href="servicios.html" class="barra__enlace">Servicio</a>
+                    <a href="contacto.html" class="barra__enlace animacion barra__enlace--seleccion animacion">Contacto</a>
                 </nav>
             </div>
         </div>
 
         <section class="descripcion__contenedor">
             <div class="descripcion__contenido--secundario contenedor">
-                <h1>Servicios</h1>
+                <h1>Contacto</h1>
             </div>
         </section>
     </header>
 
-    <section class="nosotros contenedor separador">
-        <h2 class="nosotros__titulo">Conoce nuestro equipo</h2>
-        <div class="nosotros__presentacion">
-            <div class="nosotros__bloque">
-                <img src="img/marco@2x-8.png" alt="marco" class="nosotros__marco">
-            </div>
+    <main class="contacto">
+        <div class="contacto__informacion contenedor">
+            <h2 class="contacto__titulo">Programar Asesoría Personalizada</h2>
+            <form action="#" class="contacto__formulario contenedor">
+                <div class="contacto__elemento contenedor">
+                    <label for="nombre" class="contacto__etiqueta">Nombre</label>
+                    <input type="text" placeholder="Ingresar nombres" id="nombre" class="contacto__campo">
+                </div>
 
-            <div class="nosotros__bloque nosotros__bloque--descripcion">
-                <h3>Nosotros</h3>
-                <p class="nosotros__texto">Somos un equipo de diseñadores gráficos
-                    apasionados listos para convertir tus ideas en
-                    realidad. ¿Listo para llevar tus proyectos al
-                    siguiente nivel?
-                </p>
-                <a href="#" class="boton boton__secundario">Conocer</a>
-            </div>
+                <div class="contacto__elemento">
+                    <label for="apellido" class="contacto__etiqueta">Apellidos</label>
+                    <input type="text" placeholder="Ingresar apellidos" id="apellido" class="contacto__campo">
+                </div>
+
+                <div class="contacto__elemento contacto__elemento--100">
+                    <label for="email" class="contacto__etiqueta">Correo electrónico</label>
+                    <input type="email" placeholder="Ingresar el correo electónico" id="email" class="contacto__campo">
+                </div>
+
+                <div class="contacto__elemento contacto__elemento--100">
+                    <label for="telefono" class="contacto__etiqueta">Número de contacto:</label>
+                    <input type="tel" placeholder="Teléfono o celular" id="telefono" class="contacto__campo">
+                </div>
+
+                <div class="contacto__elemento">
+                    <label class="contacto__etiqueta">¿Ya tienes una empresa constituida?</label>
+
+                    <div class="contacto__elemento--empresa">
+                        <label for="empresa__si" class="contacto__etiqueta">Si</label>
+                        <input type="radio" value="si" name="empresa" id="empresa__si" >
+                    </div>
+                    
+                    <div class="contacto__elemento--empresa">
+                        <label for="empresa__no" class="contacto__etiqueta">No</label>
+                        <input type="radio" value="no" name="empresa" id="empresa__no">
+                    </div>
+                </div>
+
+                <div class="contacto__elemento">
+                    <label for="marca" class="contacto__etiqueta">¿Cuál es el nombre de la empresa?</label>
+                    <input type="text" placeholder="Ingrese el nombre o razón social" id="marca" class="contacto__campo">
+                </div>
+                
+                <div class="contacto__elemento contacto__elemento--fecha">
+                    <label for="dia" class="contacto__etiqueta">Día:</label>
+                    <input type="date" id="dia" class="contacto__campo">
+                </div>
+
+                <div class="contacto__elemento contacto__elemento--fecha">
+                    <label for="hora" class="contacto__etiqueta">Hora</label>
+                    <input type="time" placeholder="Programa la hora" id="hora" class="contacto__campo">
+                </div>
+
+                <div class="contacto__elemento contacto__elemento--envio">
+                    <input type="submit" value="Agendar" class="boton__envio boton">
+                </div>
+            </form>
         </div>
-    </section>
-
-    <main class="servicio separador">
-        <div class="servicio__contenido contenedor">
-            <div class="servicio__card">
-                <img src="img/copyright_11310037.png" alt="Diseño de marca" class="servicio__imagen">
-                <h2 class="servicio__titulo">Diseño de marca</h2>
-                <p class="servicio__texto">Crea una presencia en línea única que refleje la
-                    esencia de tu marca.
-                </p>
-                <br>
-                <a href="#" class="boton boton__secundario">Cotizar</a>
-            </div>
-
-            <div class="servicio__card">
-                <img src="img/web-design_3159310.png" alt="Desarrollo web" class="servicio__imagen">
-                <h2 class="servicio__titulo">Desarrollo web</h2>
-                <p class="servicio__texto">Construimos sitios web funcionales y atractivos
-                    que se adaptan a tus necesidades específicas
-                </p>
-                <a href="#" class="boton boton__secundario">Cotizar</a>
-            </div>
-
-            <div class="servicio__card">
-                <img src="img/scrolling_1786968.png" alt="Responsive web" class="servicio__imagen">
-                <h2 class="servicio__titulo">Optimización vista Móvil</h2>
-                <p class="servicio__texto">Aseguramos que tu sitio web se vea y funcione
-                    perfectamente en todos los dispositivos.
-                </p>
-                <a href="#" class="boton boton__secundario">Cotizar</a>
-            </div>
-        </div>
-
-        <div class="principal__flecha">
-            <div class="principal__flecha--derecha">
-                <svg xmlns="http://www.w3.org/2000/svg" id="arrow-circle-down" viewBox="0 0 24 24" width="5vw" height="5vw">
-                    <path d="M24,12A12,12,0,1,0,12,24,12.013,12.013,0,0,0,24,12ZM8,12a2.993,2.993,0,0,1,.752-1.987c.291-.327.574-.637.777-.84L12.353,6.3a1,1,0,0,1,1.426,1.4L10.95,10.58c-.187.188-.441.468-.7.759a1,1,0,0,0,0,1.323c.258.29.512.57.693.752L13.779,16.3a1,1,0,0,1-1.426,1.4L9.524,14.822c-.2-.2-.48-.507-.769-.833A2.99,2.99,0,0,1,8,12Z"></path>
-                </svg>
-            </div>
-            <div class="principal__flecha--izquierda">
-                <svg xmlns="http://www.w3.org/2000/svg" id="arrow-circle-down" viewBox="0 0 24 24" width="5vw" height="5vw">
-                    <path d="M0,12A12,12,0,1,0,12,0,12.013,12.013,0,0,0,0,12Zm16,0a2.993,2.993,0,0,1-.752,1.987c-.291.327-.574.637-.777.84L11.647,17.7a1,1,0,1,1-1.426-1.4L13.05,13.42c.187-.188.441-.468.7-.759a1,1,0,0,0,0-1.323c-.258-.29-.512-.57-.693-.752L10.221,7.7a1,1,0,1,1,1.426-1.4l2.829,2.879c.2.2.48.507.769.833A2.99,2.99,0,0,1,16,12Z"></path>
-                </svg>
-            </div>
+        
+        <div class="contacto__descripcion">
+            <h3 class="contacto__subtitulo">Asesoría Personalizada<br><span class="contacto__subtitulo--seleccion">Para tu Web</span></h3>
+            <p class="contacto__texto">Entender tus necesidades es el primer paso hacia el
+                éxito en línea. Con un enfoque centrado en ti, podemos crear una solución que se adapte perfectamente a tus objetivos.</p>
         </div>
 
         <img src="img/Asset 10.png" alt="WP-chat" class="principal__contacto">
     </main>
-
-    <section class="equipo contenedor separador">
-        <img src="img/Asset 2-100.jpg" alt="Equipo" class="equipo__imagen">
-        <div class="equipo__parrafo">
-            <h2 class="equipo__titulo">Seremos parte de tu equipo</h2>
-            <p class="equipo__texto">
-                Confía en nosotros para llevar tu presencia en línea al siguiente nivel on nuestros
-                servicios de diseño y desarrollo web potencia tu presencia en línea
-            </p>
-        </div>
-    </section>
 
     <footer class="footer separador">
         <div class="footer__info">
