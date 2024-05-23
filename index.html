@@ -16,13 +16,19 @@
     <title>3Studio</title>
 </head>
 <body>
-
     <header class="encabezado">
         <div class="barra">
             <div class="barra__contenido contenedor">
                 <p class="barra__logo"><span class="barra__logo--titulo">3S</span>tudio</p>
-                
-                <nav class="barra__navegacion">
+
+                <label for="activador__menu" class="barra__icono">
+                    <div class="barra__icono--linea"></div>
+                    <div class="barra__icono--linea"></div>
+                    <div class="barra__icono--linea"></div>
+                </label>
+
+                <input type="checkbox" id="activador__menu" class="activador barra__activador">
+                <nav class="barra__navegacion animacion">
                     <a href="index.html" class="barra__enlace barra__enlace--seleccion animacion">Inicio</a>
                     <a href="servicios.html" class="barra__enlace animacion">Servicio</a>
                     <a href="contacto.html" class="barra__enlace animacion">Contacto</a>
@@ -71,12 +77,12 @@
 
             <div class="principal__flecha">
                 <div class="principal__flecha--derecha">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="arrow-circle-down" viewBox="0 0 24 24" width="5vw" height="5vw">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="arrow-circle-down" viewBox="0 0 24 24" width="6vh" height="6vh">
                         <path d="M24,12A12,12,0,1,0,12,24,12.013,12.013,0,0,0,24,12ZM8,12a2.993,2.993,0,0,1,.752-1.987c.291-.327.574-.637.777-.84L12.353,6.3a1,1,0,0,1,1.426,1.4L10.95,10.58c-.187.188-.441.468-.7.759a1,1,0,0,0,0,1.323c.258.29.512.57.693.752L13.779,16.3a1,1,0,0,1-1.426,1.4L9.524,14.822c-.2-.2-.48-.507-.769-.833A2.99,2.99,0,0,1,8,12Z"></path>
                     </svg>
                 </div>
                 <div class="principal__flecha--izquierda">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="arrow-circle-down" viewBox="0 0 24 24" width="5vw" height="5vw">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="arrow-circle-down" viewBox="0 0 24 24" width="6vh" height="6vh">
                         <path d="M0,12A12,12,0,1,0,12,0,12.013,12.013,0,0,0,0,12Zm16,0a2.993,2.993,0,0,1-.752,1.987c-.291.327-.574.637-.777.84L11.647,17.7a1,1,0,1,1-1.426-1.4L13.05,13.42c.187-.188.441-.468.7-.759a1,1,0,0,0,0-1.323c-.258-.29-.512-.57-.693-.752L10.221,7.7a1,1,0,1,1,1.426-1.4l2.829,2.879c.2.2.48.507.769.833A2.99,2.99,0,0,1,16,12Z"></path>
                     </svg>
                 </div>
@@ -166,7 +172,7 @@
     <section class="preguntas contenedor separador">
         <h2 class="preguntas__titulo">Preguntas Frecuentes</h2>
 
-        <div class="preguntas__contenedor">
+        <div class="preguntas__contenedor contenedor">
             <div class="preguntas__card">
                 <input type="checkbox" id="activador__card1" class="activador card__activador">
                 <div class="preguntas__duda">
