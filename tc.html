@@ -32,89 +32,98 @@
                 <nav class="barra__navegacion">
                     <a href="index.html" class="barra__enlace animacion">Inicio</a>
                     <a href="servicios.html" class="barra__enlace">Servicio</a>
-                    <a href="contacto.html" class="barra__enlace animacion barra__enlace--seleccion animacion">Contacto</a>
+                    <a href="contacto.html" class="barra__enlace animacion animacion">Contacto</a>
                 </nav>
             </div>
         </div>
 
         <section class="descripcion__contenedor">
             <div class="descripcion__contenido--secundario contenedor">
-                <h1>Contacto</h1>
+                <h1>Términos y Condiciones</h1>
             </div>
         </section>
     </header>
 
-    <main class="contacto">
-        <div class="contacto__informacion contenedor">
-            <h2 class="contacto__titulo">Programar Asesoría Personalizada</h2>
-            <form action="/submitAppointment" method="post" class="contacto__formulario contenedor"> <!-- Se adciono el metodo "POST" y action="Nombre de la base de datos (Appointment") -->
-                <div class="contacto__elemento contenedor">
-                    <label for="nombre" class="contacto__etiqueta">Nombre</label>
-                    <input type="text" placeholder="Tus nombres" id="nombre" class="contacto__campo" required>
-                </div>
-
-                <div class="contacto__elemento">
-                    <label for="apellido" class="contacto__etiqueta">Apellidos</label>
-                    <input type="text" placeholder="Tus apellidos" id="apellido" class="contacto__campo" required>
-                </div>
-
-                <div class="contacto__elemento contacto__elemento--100">
-                    <label for="email" class="contacto__etiqueta">Correo electrónico</label>
-                    <input type="email" placeholder="Ingresar su correo electónico" id="email" class="contacto__campo" required>
-                </div>
-
-                <div class="contacto__elemento contacto__elemento--100">
-                    <label for="telefono" class="contacto__etiqueta">Número de contacto:</label>
-                    <input type="tel" placeholder="Teléfono o celular" id="telefono" class="contacto__campo" required>
-                </div>
-
-                <div class="contacto__elemento">
-                    <label class="contacto__etiqueta">¿Ya tienes una empresa constituida?</label>
-
-                    <div class="contacto__elemento--empresa">
-                        <label for="empresa__si" class="contacto__etiqueta">Si</label>
-                        <input type="radio" value="si" name="empresa" id="empresa__si" required>
-                    </div>
-                    
-                    <div class="contacto__elemento--empresa">
-                        <label for="empresa__no" class="contacto__etiqueta">No</label>
-                        <input type="radio" value="no" name="empresa" id="empresa__no" required>
-                    </div>
-                </div>
-
-                <div class="contacto__elemento">
-                    <label for="marca" class="contacto__etiqueta">¿Cuál es el nombre de la empresa?</label>
-                    <input type="text" placeholder="Nombre o razón social" id="marca" class="contacto__campo">
-                </div>
-                
-                <div class="contacto__elemento contacto__elemento--fecha">
-                    <label for="dia" class="contacto__etiqueta">Día:</label>
-                    <input type="date" id="dia" class="contacto__campo" required>
-                </div>
-
-                <div class="contacto__elemento contacto__elemento--fecha">
-                    <label for="hora" class="contacto__etiqueta">Hora</label>
-                    <input type="time" placeholder="Programa la hora" id="hora" class="contacto__campo" required>
-                </div>
-
-                <div class="contacto__elemento contacto__elemento--tc">
-                    <label for="tc">Acepto los términos y condiciones</label>
-                    <input type="checkbox" id="tc" required>
-                </div>
-
-                <div class="contacto__elemento contacto__elemento--envio">
-                    <input type="submit" value="Agendar" class="boton__envio boton" required>
-                </div>
-            </form>
+    <div class="informacion">
+        <p class="informacion__texto contenedor">Estos términos protegen tanto a la empresa que opera el sitio como a sus usuarios, asegurando
+            claridad y transparencia en las interacciones y transacciones</p>
         </div>
-        
-        <div class="contacto__descripcion">
-            <h3 class="contacto__subtitulo">Asesoría Personalizada<br><span class="contacto__subtitulo--seleccion">Para tu Web</span></h3>
-            <p class="contacto__texto">Entender tus necesidades es el primer paso hacia el
-                éxito en línea. Con un enfoque centrado en ti, podemos crear una solución que se adapte perfectamente a tus objetivos.</p>
+    </div>
+
+    <main class="termcond contenedor separador">
+        <div class="termcond__titulo">
+            <p class="termcond__texto contenedor">Conoce más</p>
+            <h2>Información</h2>
         </div>
 
-        <img src="img/Asset 10.png" alt="WP-chat" class="principal__contacto">
+        <nav class="termcond__navegacion separador">
+            <button class="termcond__boton termcond__boton--activo">Privacidad</button>
+            <button class="termcond__boton">Término uso</button>
+            <button class="termcond__boton">Propiedad</button>
+            <button class="termcond__boton">Facturación</button>
+        </nav>
+
+        <div class="termcond__contenido">
+            <div class="termcond__seccion termcond__seccion--activo">
+                <div class="termcond__elemento">
+                    <h3>Recopilación de Información</h3>
+                    <p>Recopilamos información personal y técnica necesaria para proporcionar nuestros servicios, incluyendo nombres, direcciones de correo electrónico, información de contacto y detalles técnicos del proyecto.</p>
+                </div>
+
+                <div class="termcond__elemento">
+                    <h3>Uso de la Información</h3>
+                    <p>Utilizamos la información recopilada para gestionar y mejorar nuestros servicios, comunicarnos con los clientes y cumplir con nuestras obligaciones contractuales.</p>
+                </div>
+
+                <div class="termcond__elemento">
+                    <h3>Protección de la Información</h3>
+                    <p>Implementamos medidas de seguridad adecuadas para proteger la información personal contra el acceso no autorizado, la alteración, la divulgación o la destrucción.</p>
+                </div>
+            </div>
+            <!-- Privacidad -->
+
+            <div class="termcond__seccion">
+                <div class="termcond__elemento">
+                    <h3>Uso acetable</h3>
+                    <p>Los servicios de [Nombre de la Empresa] deben ser utilizados de manera legal y ética. Queda prohibido
+                        el uso de nuestros servicios para actividades ilícitas, ofensivas o fraudulentas.</p>
+                </div>
+
+                <div class="termcond__elemento">
+                    <h3>Acceso a Servicios</h3>
+                    <p>Nos reservamos el derecho de suspender o terminar el acceso a nuestros servicios en caso de violación
+                        de estos términos.</p>
+                </div>
+            </div>
+            <!-- Término uso -->
+
+            <div class="termcond__seccion">
+                <div class="termcond__elemento">
+                    <h3>Derechos del Cliente</h3>
+                    <p>El cliente retiene todos los derechos de propiedad intelectual sobre el contenido y los materiales proporcionados para el desarrollo del proyecto.</p>
+                </div>
+
+                <div class="termcond__elemento">
+                    <h3>Derechos de la Empresa</h3>
+                    <p>3STUDIO retiene todos los derechos de propiedad intelectual sobre los diseños, códigos y otros materiales desarrollados hasta que se realice el pago completo de los servicios.</p>
+                </div>
+            </div>
+            <!-- Propiedad -->
+
+            <div class="termcond__seccion">
+                <div class="termcond__elemento">
+                    <h3>Estructura de Pagos</h3>
+                    <p>Los pagos deben realizarse de acuerdo con los términos establecidos en la propuesta o contrato. Podemos requerir un anticipo antes de iniciar el trabajo y los pagos finales antes de la entrega del proyecto.</p>
+                </div>
+
+                <div class="termcond__elemento">
+                    <h3>Retrasos en el Pago</h3>
+                    <p>Nos reservamos el derecho de suspender los servicios en caso de retrasos en el pago. Se pueden aplicar intereses por pagos atrasados.</p>
+                </div>
+            </div>
+            <!-- Facturación -->
+
+        </div>
     </main>
 
     <footer class="footer separador">
@@ -185,5 +194,6 @@
         </div>
     </footer>
     
+    <script src="js/app.js"></script>
 </body>
 </html>

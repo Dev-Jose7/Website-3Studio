@@ -32,89 +32,68 @@
                 <nav class="barra__navegacion">
                     <a href="index.html" class="barra__enlace animacion">Inicio</a>
                     <a href="servicios.html" class="barra__enlace">Servicio</a>
-                    <a href="contacto.html" class="barra__enlace animacion barra__enlace--seleccion animacion">Contacto</a>
+                    <a href="contacto.html" class="barra__enlace animacion animacion">Contacto</a>
                 </nav>
             </div>
         </div>
 
         <section class="descripcion__contenedor">
             <div class="descripcion__contenido--secundario contenedor">
-                <h1>Contacto</h1>
+                <h1>Política Soporte Web</h1>
             </div>
         </section>
     </header>
 
-    <main class="contacto">
-        <div class="contacto__informacion contenedor">
-            <h2 class="contacto__titulo">Programar Asesoría Personalizada</h2>
-            <form action="/submitAppointment" method="post" class="contacto__formulario contenedor"> <!-- Se adciono el metodo "POST" y action="Nombre de la base de datos (Appointment") -->
-                <div class="contacto__elemento contenedor">
-                    <label for="nombre" class="contacto__etiqueta">Nombre</label>
-                    <input type="text" placeholder="Tus nombres" id="nombre" class="contacto__campo" required>
-                </div>
+    <div class="informacion">
+        <p class="informacion__texto contenedor">En 3studio, nos comprometemos a proporcionar un soporte técnico de alta calidad a nuestros clientes
+            para garantizar el óptimo funcionamiento de sus sitios web. Esta política de soporte web describe
+            los servicios de soporte que ofrecemos, los tiempos de respuesta y las responsabilidades tanto de
+            nuestra empresa como de nuestros clientes.</p>
+        </div>
+    </div>
 
-                <div class="contacto__elemento">
-                    <label for="apellido" class="contacto__etiqueta">Apellidos</label>
-                    <input type="text" placeholder="Tus apellidos" id="apellido" class="contacto__campo" required>
-                </div>
+    <main class="politica contenedor separador">
+        <div class="politica__contenido separador">
+            <h2 class="politica__titulo">Tipos de soporte</h2>
+            <div class="politica__texto">
+                <p><h3 class="politica__subtitulo">Soporte Técnico: </h3>Resolución de problemas técnicos relacionados con el funcionamiento del sitio web,
+                    errores de código, y problemas de compatibilidad.</p>
+                <p><h3 class="politica__subtitulo">Soporte Contenido: </h3>Asistencia con la actualización y gestión del contenido del sitio web, incluyendo
+                    texto, imágenes y videos.</p>
+                <p><h3 class="politica__subtitulo">Soporte seguridad: </h3> Monitoreo y respuesta a amenazas de seguridad, implementación de medidas
+                    de seguridad y recuperación de sitios web afectados por ataques.</p>
+                <p><h3 class="politica__subtitulo">Soporte de actualizaciones: </h3> Instalación de actualizaciones de software y plugins, y realización de mejoras
+                    y optimizaciones.</p>
+            </div>
+        </div>
 
-                <div class="contacto__elemento contacto__elemento--100">
-                    <label for="email" class="contacto__etiqueta">Correo electrónico</label>
-                    <input type="email" placeholder="Ingresar su correo electónico" id="email" class="contacto__campo" required>
+        <div class="politica__contenido separador">
+            <h2 class="politica__titulo">Tiempos de respuesta</h2>
+            <h3 class="politica__subtitulo">Nos esforzamos por responder a todas las solicitudes de soporte dentro de los siguientes plazos:</h3>
+                <div class="politica__texto">
+                    <p>Consultas Generales: Dentro de 24 horas durante los días hábiles.</p>
+                    <p>Problemas Críticos: Dentro de 1 a 2 horas desde la recepción de la solicitud.</p>
+                    <p>Actualizaciones y Mejoras: Dentro de 48 horas, dependiendo de la complejidad de la solicitud.</p>
                 </div>
+        </div>
 
-                <div class="contacto__elemento contacto__elemento--100">
-                    <label for="telefono" class="contacto__etiqueta">Número de contacto:</label>
-                    <input type="tel" placeholder="Teléfono o celular" id="telefono" class="contacto__campo" required>
-                </div>
-
-                <div class="contacto__elemento">
-                    <label class="contacto__etiqueta">¿Ya tienes una empresa constituida?</label>
-
-                    <div class="contacto__elemento--empresa">
-                        <label for="empresa__si" class="contacto__etiqueta">Si</label>
-                        <input type="radio" value="si" name="empresa" id="empresa__si" required>
-                    </div>
-                    
-                    <div class="contacto__elemento--empresa">
-                        <label for="empresa__no" class="contacto__etiqueta">No</label>
-                        <input type="radio" value="no" name="empresa" id="empresa__no" required>
-                    </div>
-                </div>
-
-                <div class="contacto__elemento">
-                    <label for="marca" class="contacto__etiqueta">¿Cuál es el nombre de la empresa?</label>
-                    <input type="text" placeholder="Nombre o razón social" id="marca" class="contacto__campo">
-                </div>
+        <div class="politica__contenido separador">
+            <h2 class="politica__titulo">Cookies y tecnologías similares</h2>
+            <h3 class="politica__subtitulo">El soporte no incluye:</h3>
+            <div class="politica__texto">
+                <p>Formación en el uso de herramientas de administración de contenido o diseño web</p>
+                <p>Desarrollo de nuevas funcionalidades o cambios estructurales significativos al sitio web (estos servicios
+                    pueden ser ofrecidos bajo un contrato separado).</p>
+                <p>Soporte para problemas causados por modificaciones no autorizadas o interferencia por parte del cliente
+                    o terceros</p>
+            </div>
+            <p class="politica__texto">
                 
-                <div class="contacto__elemento contacto__elemento--fecha">
-                    <label for="dia" class="contacto__etiqueta">Día:</label>
-                    <input type="date" id="dia" class="contacto__campo" required>
-                </div>
-
-                <div class="contacto__elemento contacto__elemento--fecha">
-                    <label for="hora" class="contacto__etiqueta">Hora</label>
-                    <input type="time" placeholder="Programa la hora" id="hora" class="contacto__campo" required>
-                </div>
-
-                <div class="contacto__elemento contacto__elemento--tc">
-                    <label for="tc">Acepto los términos y condiciones</label>
-                    <input type="checkbox" id="tc" required>
-                </div>
-
-                <div class="contacto__elemento contacto__elemento--envio">
-                    <input type="submit" value="Agendar" class="boton__envio boton" required>
-                </div>
-            </form>
+                
+                </p>
+            <p class="politica__texto">
+                </p>
         </div>
-        
-        <div class="contacto__descripcion">
-            <h3 class="contacto__subtitulo">Asesoría Personalizada<br><span class="contacto__subtitulo--seleccion">Para tu Web</span></h3>
-            <p class="contacto__texto">Entender tus necesidades es el primer paso hacia el
-                éxito en línea. Con un enfoque centrado en ti, podemos crear una solución que se adapte perfectamente a tus objetivos.</p>
-        </div>
-
-        <img src="img/Asset 10.png" alt="WP-chat" class="principal__contacto">
     </main>
 
     <footer class="footer separador">
@@ -184,6 +163,6 @@
             </form>
         </div>
     </footer>
-    
+    <script src="js/app.js"></script>
 </body>
 </html>

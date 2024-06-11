@@ -31,93 +31,125 @@
                 <input type="checkbox" id="activador__menu" class="activador barra__activador">
                 <nav class="barra__navegacion">
                     <a href="index.html" class="barra__enlace animacion">Inicio</a>
-                    <a href="servicios.html" class="barra__enlace">Servicio</a>
-                    <a href="contacto.html" class="barra__enlace animacion barra__enlace--seleccion animacion">Contacto</a>
+                    <a href="servicios.html" class="barra__enlace animacion">Servicio</a>
+                    <a href="contacto.html" class="barra__enlace animacion">Contacto</a>
                 </nav>
             </div>
         </div>
 
         <section class="descripcion__contenedor">
             <div class="descripcion__contenido--secundario contenedor">
-                <h1>Contacto</h1>
+                <h1>Servicios</h1>
             </div>
         </section>
     </header>
 
-    <main class="contacto">
-        <div class="contacto__informacion contenedor">
-            <h2 class="contacto__titulo">Programar Asesoría Personalizada</h2>
-            <form action="/submitAppointment" method="post" class="contacto__formulario contenedor"> <!-- Se adciono el metodo "POST" y action="Nombre de la base de datos (Appointment") -->
-                <div class="contacto__elemento contenedor">
-                    <label for="nombre" class="contacto__etiqueta">Nombre</label>
-                    <input type="text" placeholder="Tus nombres" id="nombre" class="contacto__campo" required>
-                </div>
-
-                <div class="contacto__elemento">
-                    <label for="apellido" class="contacto__etiqueta">Apellidos</label>
-                    <input type="text" placeholder="Tus apellidos" id="apellido" class="contacto__campo" required>
-                </div>
-
-                <div class="contacto__elemento contacto__elemento--100">
-                    <label for="email" class="contacto__etiqueta">Correo electrónico</label>
-                    <input type="email" placeholder="Ingresar su correo electónico" id="email" class="contacto__campo" required>
-                </div>
-
-                <div class="contacto__elemento contacto__elemento--100">
-                    <label for="telefono" class="contacto__etiqueta">Número de contacto:</label>
-                    <input type="tel" placeholder="Teléfono o celular" id="telefono" class="contacto__campo" required>
-                </div>
-
-                <div class="contacto__elemento">
-                    <label class="contacto__etiqueta">¿Ya tienes una empresa constituida?</label>
-
-                    <div class="contacto__elemento--empresa">
-                        <label for="empresa__si" class="contacto__etiqueta">Si</label>
-                        <input type="radio" value="si" name="empresa" id="empresa__si" required>
-                    </div>
-                    
-                    <div class="contacto__elemento--empresa">
-                        <label for="empresa__no" class="contacto__etiqueta">No</label>
-                        <input type="radio" value="no" name="empresa" id="empresa__no" required>
-                    </div>
-                </div>
-
-                <div class="contacto__elemento">
-                    <label for="marca" class="contacto__etiqueta">¿Cuál es el nombre de la empresa?</label>
-                    <input type="text" placeholder="Nombre o razón social" id="marca" class="contacto__campo">
-                </div>
-                
-                <div class="contacto__elemento contacto__elemento--fecha">
-                    <label for="dia" class="contacto__etiqueta">Día:</label>
-                    <input type="date" id="dia" class="contacto__campo" required>
-                </div>
-
-                <div class="contacto__elemento contacto__elemento--fecha">
-                    <label for="hora" class="contacto__etiqueta">Hora</label>
-                    <input type="time" placeholder="Programa la hora" id="hora" class="contacto__campo" required>
-                </div>
-
-                <div class="contacto__elemento contacto__elemento--tc">
-                    <label for="tc">Acepto los términos y condiciones</label>
-                    <input type="checkbox" id="tc" required>
-                </div>
-
-                <div class="contacto__elemento contacto__elemento--envio">
-                    <input type="submit" value="Agendar" class="boton__envio boton" required>
-                </div>
-            </form>
+    <main class="somos">
+        <div class="informacion">
+            <p class="informacion__texto contenedor">En 3studio, nos comprometemos a proporcionar un soporte técnico de alta calidad a nuestros clientes
+            para garantizar el óptimo funcionamiento de sus sitios web. Esta política de soporte web describe
+            los servicios de soporte que ofrecemos, los tiempos de respuesta y las responsabilidades tanto de
+            nuestra empresa como de nuestros clientes.</p>
         </div>
-        
-        <div class="contacto__descripcion">
-            <h3 class="contacto__subtitulo">Asesoría Personalizada<br><span class="contacto__subtitulo--seleccion">Para tu Web</span></h3>
-            <p class="contacto__texto">Entender tus necesidades es el primer paso hacia el
-                éxito en línea. Con un enfoque centrado en ti, podemos crear una solución que se adapte perfectamente a tus objetivos.</p>
+
+        <div class="somos__contenido contenedor separador">
+            <div class="somos__colaborador">
+                <img src="" alt="">
+                <h3>Valeria</h3>
+                <p>Valeria es la persona creativa en
+                    nuestro equipo. Su talento y
+                    visión nos ayudan a desarrollar
+                    ideas innovadoras y soluciones
+                    únicas para nuestros proyectos.</p>
+            </div>
+
+            <div class="somos__colaborador">
+                <img src="" alt="">
+                <h3>José</h3>
+                <p>José es el experto en maquetación
+                    HTML de nuestro equipo. Su habilidad
+                    en estructurar y diseñar páginas
+                    web garantiza que nuestros
+                    proyectos sean funcionales.</p>
+            </div>
+
+            <div class="somos__colaborador">
+                <img src="" alt="">
+                <h3>Edwar</h3>
+                <p>Edwar es el experto en bases de
+                    datos de nuestro equipo. Su
+                    conocimiento y gestión garantizan
+                    que nuestros sistemas de
+                    información sean seguros.</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="servicio">
+        <div class="servicio__carrusel contenedor">
+            <div class="principal__flecha--izquierda">
+                <svg xmlns="http://www.w3.org/2000/svg" id="arrow-circle-down" viewBox="0 0 24 24" width="4vh" height="4vh">
+                    <path d="M24,12A12,12,0,1,0,12,24,12.013,12.013,0,0,0,24,12ZM8,12a2.993,2.993,0,0,1,.752-1.987c.291-.327.574-.637.777-.84L12.353,6.3a1,1,0,0,1,1.426,1.4L10.95,10.58c-.187.188-.441.468-.7.759a1,1,0,0,0,0,1.323c.258.29.512.57.693.752L13.779,16.3a1,1,0,0,1-1.426,1.4L9.524,14.822c-.2-.2-.48-.507-.769-.833A2.99,2.99,0,0,1,8,12Z"></path>
+                </svg>
+            </div>
+
+            <div class="servicio__contenido contenedor">
+                <div class="servicio__card">
+                    <img src="img/copyright_11310037.png" alt="Diseño de marca" class="servicio__imagen">
+                    <h2 class="servicio__titulo">Diseño de marca</h2>
+                    <p class="servicio__texto">Crea una presencia en línea única que refleje la
+                        esencia de tu marca.
+                    </p>
+                    <br>
+                    <a href="contacto.html" class="boton boton__secundario">Cotizar</a>
+                </div>
+
+                <div class="servicio__card">
+                    <img src="img/web-design_3159310.png" alt="Desarrollo web" class="servicio__imagen">
+                    <h2 class="servicio__titulo">Desarrollo web</h2>
+                    <p class="servicio__texto">Construimos sitios web funcionales y atractivos
+                        que se adaptan a tus necesidades específicas
+                    </p>
+                    <a href="contacto.html" class="boton boton__secundario">Cotizar</a>
+                </div>
+
+                <div class="servicio__card">
+                    <img src="img/scrolling_1786968.png" alt="Responsive web" class="servicio__imagen">
+                    <h2 class="servicio__titulo">Optimización vista Móvil</h2>
+                    <p class="servicio__texto">Aseguramos que tu sitio web se vea y funcione
+                        perfectamente en todos los dispositivos.
+                    </p>
+                    <a href="contacto.html" class="boton boton__secundario">Cotizar</a>
+                </div>
+
+                <div class="servicio__card">
+                    <img src="img/ICONO2.png" alt="Responsive web" class="servicio__imagen">
+                    <h2 class="servicio__titulo">Optimización de motores de búsqueda (SEO)</h2>
+                    <p class="servicio__texto">Mejora tu visibilidad en los resultados de búsqueda y atrae más tráfico orgánico.
+                    </p>
+                    <a href="contacto.html" class="boton boton__secundario">Cotizar</a>
+                </div>
+
+                <div class="servicio__card">
+                    <img src="img/ICONO3.png" alt="Responsive web" class="servicio__imagen">
+                    <h2 class="servicio__titulo">Mantenimiento y actualizaciones</h2>
+                    <p class="servicio__texto">Mantenemos tu sitio web funcionando sin problemas y al día con las últimas tendencias tecnológicas.
+                    </p>
+                    <a href="contacto.html" class="boton boton__secundario">Cotizar</a>
+                </div>
+            </div>
+
+            <div class="principal__flecha--derecha">
+                <svg xmlns="http://www.w3.org/2000/svg" id="arrow-circle-down" viewBox="0 0 24 24" width="4vh" height="4vh">
+                    <path d="M0,12A12,12,0,1,0,12,0,12.013,12.013,0,0,0,0,12Zm16,0a2.993,2.993,0,0,1-.752,1.987c-.291.327-.574.637-.777.84L11.647,17.7a1,1,0,1,1-1.426-1.4L13.05,13.42c.187-.188.441-.468.7-.759a1,1,0,0,0,0-1.323c-.258-.29-.512-.57-.693-.752L10.221,7.7a1,1,0,1,1,1.426-1.4l2.829,2.879c.2.2.48.507.769.833A2.99,2.99,0,0,1,16,12Z"></path>
+                </svg>
+            </div>
         </div>
 
         <img src="img/Asset 10.png" alt="WP-chat" class="principal__contacto">
-    </main>
+    </section>
 
-    <footer class="footer separador">
+    <footer class="footer">
         <div class="footer__info">
             <div class="footer__barra contenedor">
                 <nav class="footer__navegacion">
@@ -184,6 +216,6 @@
             </form>
         </div>
     </footer>
-    
+    <script src="js/app.js"></script>
 </body>
 </html>

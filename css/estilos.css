@@ -37,6 +37,7 @@ h1, h2, h3{
 
 h1{
     font-size: 5vh;
+    text-align: center;
 }
 
 h2{
@@ -177,7 +178,7 @@ img{
 
 /**Descripcion**/
 .descripcion{
-    background-image: url(..//img/banner2-100.jpg);
+    background-image: url(..//img/fondoprimero0.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -194,17 +195,28 @@ img{
 
 .descripcion__info{
     flex: 0 0 90%;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     color: var(--blanco);
 }
 
-.descripcion__parrafo{
+.descripcion__info--activo{
+    display: flex;
+}
+
+/* @keyframes{
+    fadeUp{
+        0
+    }
+} */
+
+.descripcion__elemento{
     margin-bottom: 2vw;
 }
 
-.descripcion__parrafo--titulo{
+.descripcion__elemento--titulo{
+    text-align: start;
     font-size: 4vh;
 }
 
@@ -252,11 +264,14 @@ img{
 
 /**Carrusel**/
 .principal__carrusel{
-    display: flex;
-    justify-content: center;
-    gap: 4vw;
-    overflow-x: hidden;
     position: relative;
+    width: 80%;
+    overflow-x: hidden;
+}
+
+.principal__galeria{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .principal__imagen{
@@ -264,8 +279,8 @@ img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    flex: 0 0 60vw;
     border-radius: 3vw;
+    flex: 0 0 100%;
 }
 
 .principal__imagen--uno{
@@ -280,20 +295,22 @@ img{
     background-image: url(..//img/Asset\ 16.png);
 }
 
-.principal__flecha{
-    position: absolute;
-    top: 45%;
-    left: 2vw;
-    right: 2vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .principal__flecha--derecha,
 .principal__flecha--izquierda{
     fill: var(--blanco);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
 } 
+
+.principal__flecha--derecha{
+    right: 3.5vw;
+}
+
+.principal__flecha--izquierda{
+    left: 3.5vw;
+}
 
 /**Principal Nosotros**/
 .principal__nosotros{
@@ -599,23 +616,28 @@ img{
     background-color: var(--secundario);
 }
 
+.servicio__carrusel{
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .servicio__contenido{
     display: flex;
     justify-content: space-between;
     padding: 5vw 0 0 0;
-    position: relative !important;
-    overflow-x: hidden;
-    gap: 5vw;
+    transition: all 0.5s;
 }
 
 .servicio__card{
-    flex: 0 0 calc(50% - 2.5vw);
+    flex: 0 0 calc(50vw - 2.5vw);
     text-align: center;
     color: var(--negro);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding: 3vw;
 }
 
 .servicio__imagen{
@@ -632,6 +654,7 @@ img{
 .servicio__texto{
     font-family: var(--auxiliar);
     font-weight: 500;
+    text-align: justify;
 }
 
 .servicio .boton__secundario{
@@ -643,22 +666,19 @@ img{
 
 .servicio .principal__flecha{
     position: relative;
-    bottom: 0;
+    bottom: 100%;
     right: 0;
     left: 0;
     justify-content: center;
     gap: 2vh;
 }
 
-.servicio .principal__flecha--derecha{
-    margin-left: 2vw;
-    fill: var(--negro);
-} 
-
+.servicio .principal__flecha--derecha,
 .servicio .principal__flecha--izquierda{
-    margin-right: 2vw;
+    margin-left: 1.5|vw;
     fill: var(--negro);
-}
+    top: 16%;
+} 
 
 /**Equipo**/
 .equipo{
@@ -792,10 +812,28 @@ img{
     margin-bottom: 0;
 }
 
+.contacto__elemento--tc{
+    flex: 0 0 90%;
+    flex-direction: row;
+    align-items: center;
+    gap: 3vw ;
+    margin-top: 6vh;
+    margin-bottom: 0;
+}
+
+.contacto__elemento--tc :nth-child(1){
+    order: 2;
+    text-align: start;
+}
+
+.contacto__elemento--envio{
+    bottom: -8.5vw;
+}
+
 
 .contacto__elemento--envio{
     position: absolute;
-    bottom: -12.5vh;
+    bottom: -13.5vh;
 }
 
 .contacto__elemento--envio .boton__envio{
@@ -803,6 +841,103 @@ img{
     padding-left: 5vw;
 }
 
+
+/***Politicas de datos***/
+.informacion{
+    background-color: var(--secundario);
+    padding: 3vw;
+}
+
+.informacion__texto{
+    width: 80%;
+    text-align: justify;
+    font-size: 2.5vh;
+}
+
+/***Contenido politicas***/
+.politica__contenido{
+    text-align: justify;
+}
+.politica__titulo{
+    color: var(--primario);
+    text-transform: uppercase;
+    margin: 2vh 0;
+}
+
+.politica__subtitulo{
+    font-weight: normal;
+    display: inline;
+}
+
+.politica__texto{
+    font-size: 2.8vh;
+}
+
+/***Terminos y condiciones***/
+
+.termcond__titulo{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.termcond__texto{
+    display: inline-block;
+    border: 0.3vh solid var(--negro);
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    width: 30%;
+    padding-bottom: 0.5vh;
+    
+    margin-bottom: 2vh;
+}
+
+.termcond__navegacion{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1%;
+}
+
+.termcond__boton{
+    color: var(--blanco);
+    background-color: var(--primario);
+    border: 1vw solid var(--primario);
+    border-radius: 2vh;
+    padding: 0;
+}
+
+.termcond__boton--activo{
+    color: var(--primario);
+    background-color: var(--blanco);
+}
+
+.termcond__seccion{
+    display: none;
+}
+
+.termcond__seccion--activo{
+    display: unset;
+}
+
+/***PAGINA NOSOTROS***/
+.somos{
+    text-align: center;
+}
+
+.somos__parrafo{
+    background-color: var(--secundario);
+    padding: 3vw;
+}
+
+.somos__colaborador{
+    padding: 3vw;
+    border: 1vw solid var(--primario);
+    margin: 4vh 0;
+}
+
+.somos__colaborador p{
+    text-align: justify;
+}
 
 @media (min-width: 992px) {
     /***Globales***/
@@ -878,11 +1013,11 @@ img{
         flex: 0 0 50%;
     }
 
-    .descripcion__parrafo{
+    .descripcion__elemento{
         font-size: unset;
     }
 
-    .descripcion__parrafo--titulo{
+    .descripcion__elemento--titulo{
         font-size: 4vw;
     }
 
@@ -922,36 +1057,30 @@ img{
     /**Carrusel**/
     .principal__carrusel{
         gap: 5rem;
+        width: 60%;
     }
 
+    .principal__galeria{
+        overflow: unset;
+        transform: unset;
+    }
 
     .principal__imagen{
-        height: 40vw;
-        flex: 0 0 40vw;
-        border-radius: unset;
+        height: 80vh;
     }
 
-    .principal__imagen--uno{
-        background-image: url(..//img/Asset\ 13-8.png);
+    .principal__flecha--derecha{
+        right: 4vw;
     }
 
-    .principal__imagen--dos{
-        background-image: url(..//img/Asset\ 15.png);
-    }
-
-    .principal__imagen--tres{
-        background-image: url(..//img/Asset\ 16.png);
-    }
-
-    .principal__flecha{
-        left: 10vw;
-        right: 10vw;
+    .principal__flecha--izquierda{
+        left: 4vw;
     }
 
     .principal__flecha--derecha svg,
     .principal__flecha--izquierda svg{
-        width: 5vw;
-        height: 5vw;
+        width: 3vw;
+        height: 3vw;
     }
 
     /**Principal Nosotros**/
@@ -1154,7 +1283,6 @@ img{
     }
 
     .servicio__contenido{
-        overflow-x: unset;
         gap: 0;
     }
 
@@ -1170,10 +1298,9 @@ img{
         font-size: 1.5vw;
     }
 
-    .servicio .principal__flecha{
-        bottom: 25vw;
-        justify-content: space-between;
-        gap: 0;
+    .servicio .principal__flecha--derecha,
+    .servicio .principal__flecha--izquierda{
+        top: 31%;
     }
 
     /**Equipo**/
@@ -1200,7 +1327,7 @@ img{
 
     /**Contenido principal**/
     .contacto{
-        margin-bottom: 12vw;
+        margin-bottom: 13vw;
         flex-direction: row;
     }
 
@@ -1238,10 +1365,6 @@ img{
         justify-content: center;
     }
 
-    .contacto__elemento{
-        margin-bottom: 1vw;
-    }
-
     .contacto__etiqueta,
     .contacto__campo{
         width: 80%;
@@ -1268,7 +1391,36 @@ img{
         margin-bottom: 0;
     }
 
-    .contacto__elemento--envio{
-        bottom: -7.5vw;
+    /****Terminos y condiciones****/
+    .termcond > .separador{
+        margin-top: 2vw;
+        margin-bottom: 4vw;
+    }
+
+    .termcond__texto{
+        width: 10%;
+        border-width: 0.2vw;
+    }
+
+    .termcond__navegacion{
+        grid-template-columns: repeat(4, 10vw);
+        justify-content: center;
+    }
+    
+    .termcond__boton{
+        border: 0.25vw solid;
+        padding: 1vw;
+    }
+
+    .somos__contenido{
+        display: flex;
+        justify-content: space-between;
+        gap: 2vw;
+    }
+    
+    .somos__colaborador{
+        flex: 0 0 30%;
+        border-width: 0.35vw;
+        padding: 1vw;
     }
 }
