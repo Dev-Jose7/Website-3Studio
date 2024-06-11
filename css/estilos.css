@@ -675,7 +675,7 @@ img{
 
 .servicio .principal__flecha--derecha,
 .servicio .principal__flecha--izquierda{
-    margin-left: 1.5|vw;
+    margin-left: 1.5vw;
     fill: var(--negro);
     top: 16%;
 } 
